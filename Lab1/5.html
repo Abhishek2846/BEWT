@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindrome</title>
+</head>
+<body>
+  <script>
+    let num = parseInt(prompt("Enter a number:"));
+     if (num < 0){
+      alert("Number cannot be less than 0");
+     }
+
+      let original = num;
+      let reversed = 0;
+
+      while (num > 0) {
+        const digit = num % 10;          
+        reversed = reversed * 10 + digit; 
+        num = Math.floor(num / 10);
+      }
+
+      if(original === reversed){
+        alert("Palindrome");
+      }
+  </script>
+</body>
+</html>

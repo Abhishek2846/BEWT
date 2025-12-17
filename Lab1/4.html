@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fibbonacci</title>
+</head>
+<body>
+  <script>
+    let temp ;
+    let sum ;
+    let a = 0; 
+    let b = 1;
+
+    let n = prompt("Enter a number:");
+    if(n = 0){
+      alert("Invalid number ");
+    }
+    if(n>=1){
+      document.write(a + " ");
+    }
+    else if(n>=2){
+      document.write(b + " ");
+    }
+
+    for(i = 1 ; i < n-2 ;i++){
+      sum = a + b;
+      document.write(sum + " ");
+      temp = b ;
+      b = sum ;
+      a = temp;
+
+    }
+  </script>
+</body>
+</html>

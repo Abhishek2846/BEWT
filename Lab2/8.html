@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class in JS</title>
+</head>
+<body>
+  <script>
+    class Car{
+      constructor(name , model){
+        this.name = name;
+        this.model = model;
+      }
+
+      a(){
+        document.write("Hello "+this.name+" of "+this.model);
+      }
+    }
+
+    let car = new Car("ford" , 2019);
+    car.a();
+  </script>
+</body>
+</html>

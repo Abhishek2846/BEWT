@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mouse Click Event</title>
+</head>
+
+<body>
+
+  <button id="btn">Click Me!</button>
+  <p id="result"></p>
+
+  <script>
+    const button = document.getElementById("btn");
+
+    button.addEventListener("click", function () {
+      document.getElementById("result").innerText = "Button was clicked!";
+      button.style.background = "lightblue";
+    });
+  </script>
+
+</body>
+
+</html>
